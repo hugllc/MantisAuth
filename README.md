@@ -13,11 +13,11 @@ Not all versions have been tested.
 MantisAuth.php should go into the mediawiki/extensions/ directory.  Then the following needs
 to be put into the LocalSettings.php file:
 
-> $wgMantisPath = "/base/path/to/mantis";
-> $wgMantisAuthOnly = TRUE;
-> $wgMantisAutoCreateUser = TRUE;
-> require_once('extensions/MantisAuth.php');
-> $wgAuth = new MantisAuthPlugin();
+    $wgMantisPath = "/base/path/to/mantis";
+    $wgMantisAuthOnly = TRUE;
+    $wgMantisAutoCreateUser = TRUE;
+    require_once('extensions/MantisAuth.php');
+    $wgAuth = new MantisAuthPlugin();
 
 
 ## Contributing changes
